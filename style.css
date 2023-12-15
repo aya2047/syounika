@@ -1,0 +1,657 @@
+@charset "utf-8";
+
+body{
+    font-size: 16px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    color: #0C244A;
+}
+body,div,p,h1,h2,h3,h4,ul,figure{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: #0C244A;
+
+}
+a:hover{
+    opacity: 0.6;
+}
+li{
+    list-style: none;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+h2::after{
+    content: '';
+    display: block;
+    width: 155px;
+    height: 37px;
+    background-image: url(images/kurukuru2.svg);
+    background-size: contain;
+    margin: 0 auto;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-weight: bold;
+    font-size: 35px;
+    margin: 15px 0px;
+    color: #22aedd;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+.sub-menu{
+    font-size: 16px;
+    display: block;
+}
+.button:hover{
+    display: block;
+    color: #fff;
+    opacity: 1;
+}
+.button p:hover{
+    background: #0c244a;
+    opacity: 1;
+}
+@media (max-width:789px){
+    .container{
+        padding: 0 20px;
+    }
+    h2{
+        margin-bottom: 30px;
+    }
+}
+
+/* ヘッダー */
+header{
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 20px;
+}
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo div h4{
+    margin: 0;
+}
+.menu-btn{
+    display: none;
+}
+@media (max-width:789px){
+    header{
+        padding: 20px 20px 0;
+    }
+    .header-logo{
+        display: block;
+    }
+    .header-logo a{
+        display: block;
+    }
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #checkbox2 {
+        display: none;
+      }
+      
+      .toggle2 {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        transition-duration: .5s;
+      }
+      
+      .bars {
+        width: 100%;
+        height: 6px;
+        background-color: #0C244A;
+        border-radius: 6px;
+      }
+      
+      #bar5 {
+        transition-duration: .8s;
+      }
+      
+      #bar4,#bar6 {
+        width: 80%;
+      }
+      
+      #checkbox2:checked + .toggle2 .bars {
+        position: absolute;
+        transition-duration: .5s;
+      }
+      
+      #checkbox2:checked + .toggle2 #bar5 {
+        transform: scaleX(0);
+        transition-duration: .5s;
+      }
+      
+      #checkbox2:checked + .toggle2 #bar4 {
+        width: 100%;
+        transform: rotate(45deg);
+        transition-duration: .5s;
+      }
+      
+      #checkbox2:checked + .toggle2 #bar6 {
+        width: 100%;
+        transform: rotate(-45deg);
+        transition-duration: .5s;
+      }
+      
+      #checkbox2:checked + .toggle2 {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+      }
+    .flexbox p{
+        margin: 20px auto;
+    }
+}
+
+/* ナビゲーション */
+.navbar{
+    margin-top: 30px;
+}
+.navbar li{
+    border-right: 1px solid #3e434a;
+    display: block;
+    padding: 0 32px;
+}
+.navbar li:last-child{
+    border-right: none;
+}
+.navbar li .concept-menu:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(images/笑顔の赤ちゃんイラスト2.png) no-repeat;
+    background-size: contain;
+}
+.navbar li .doctor-menu:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(images/ドクターのアイコン素材.png) no-repeat;
+    background-size: contain;
+}
+.navbar li .shinatsu-menu:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(images/聴診器のアイコン素材.png) no-repeat;
+    background-size: contain;
+}
+.navbar li .news-menu:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(images/白抜きのインフォメーションアイコン.png) no-repeat;
+    background-size: contain;
+}
+.navbar li .qanda-menu:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(images/白紙の書類アイコン.png) no-repeat;
+    background-size: contain;
+}
+.navbar li .annai-menu:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(images/病院のアイコン素材.png) no-repeat;
+    background-size: contain;
+}
+.navbar li .access-menu:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background: url(images/地球アイコン.png) no-repeat;
+    background-size: contain;
+}
+@media(max-width:789px){
+    nav div{
+        display: none;
+    }
+    .navbar li{
+        border: none;
+        margin: 10px 0;
+    } 
+    .navbar li .concept-menu:before{
+        content: '';
+        display: none;
+    }
+    .navbar li .doctor-menu:before{
+        content: '';
+        display: none;
+    }
+    .navbar li .shinatsu-menu:before{
+        content: '';
+        display: none;
+    }
+    .navbar li .news-menu:before{
+        content: '';
+        display: none;
+    }
+    .navbar li .qanda-menu:before{
+        content: '';
+        display: none;
+    }
+    .navbar li .annai-menu:before{
+        content: '';
+        display: none;
+    }
+    .navbar li .access-menu:before{
+        content: '';
+        display: none;
+    }
+    }
+
+
+/* キービジュアル */
+#topMainVisual img{
+    border-radius: 8px;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+.slick-dots li{
+    display: none;
+}
+.keyvisual{
+    position: relative;
+}
+.shinsatu-1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+}
+.shinsatu-1-ul{
+    background-color: #C7E9F5;
+    color: #0C244A;
+    border-radius: 5px;
+    padding: 10px;
+    width: 231px;
+    margin: 0px 0px 10px auto;
+    font-size: 0.8rem;
+}
+.shinsatu-1-ul-2{
+    box-sizing: border-box;
+}
+
+@media (max-width:789px){
+    .keyvisual{
+        position: static;
+    }
+    .shinsatu-1{
+        position: static;
+    }
+    .shinsatu-1-ul{
+        margin: 0 auto 16px;
+    }
+}
+
+/* おしらせ */
+.wrapper-news{
+    background: #C7E9F5;
+    padding: 50px 0;
+}
+.news{
+    position: relative;
+}
+.mottomiru{
+    border: 1px solid #0C244A;
+    border-radius: 31px;
+    padding: 18px;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.mottomiru a{
+    display: block;
+}
+.button-048 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    margin: 0 0 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 25px;
+    background-color: #0C244A;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+.button-048:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.button-048::before {
+    position: absolute;
+    right: calc(2em + 2.5px);
+    transform: translateX(50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    content: '';
+}
+
+.button-048::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 3px solid #0C244A;
+    border-right: 3px solid #0C244A;
+    content: '';
+}
+.button-048-2{
+    display: none;
+}
+.news-content li:first-child{
+    border-bottom: 3px dotted #0C244A;
+}
+.news-content li dt{
+    margin: 0 40px 0;
+    float: left;
+}
+@media (max-width:789px){
+    .mottomiru{
+        font-size: 10px;
+        padding: 11px;
+        right: 10px;
+        bottom: 28px;
+    }
+    .button-048-1{
+        display: none;
+    }
+    .button-048-2{
+        display: flex;
+        margin: 20px auto 0;
+        font-size: 0.8rem;
+        width: 170px;
+    }
+}
+
+/* コンセプト */
+.consept-wrap{
+    padding: 50px 0;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+.flexbox-image{
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+}
+.flexbox-text{
+    width: 470px;
+    letter-spacing: 0.12pt;
+    line-height: 2.5rem;
+    margin-top: 50px;
+}
+.flexbox p{
+    padding: 20px;
+}
+
+@media (max-width:789px){
+    .flexbox{
+       flex-direction: column;
+    }
+    .flexbox-image{
+        margin: 0 auto;
+        width: 280px;
+    }
+    .flexbox-text{
+        width: 100%;
+    }
+}
+
+/* 診療案内 */
+.medical-wrap{
+    padding: 50px 0;
+}
+.figure-flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+.figure-flexbox li{
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+}
+figcaption{
+    text-align: center;
+}
+.shinryo-content{
+    text-align: left;
+    margin: 25px 45px;
+}
+figure img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 25px auto;
+}
+.ippanshinryo{
+    background-color: #A0D6E9;
+    padding-bottom: 20px;
+}
+.yoboutyusya{
+    background-color: #FFB2A9;
+    padding-bottom: 20px;
+}
+.kenshin{
+    background-color: #C2E47C;
+    padding-bottom: 20px;
+}
+.button-049 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 165px;
+    margin: 0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 25px;
+    background-color: #0C244A;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+.button-049:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+.button-049::before {
+    position: absolute;
+    right: calc(2em + 2.5px);
+    transform: translateX(50%);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    content: '';
+}
+
+.button-049::after {
+    transform: rotate(45deg);
+    width: 5px;
+    height: 5px;
+    margin-left: 10px;
+    border-top: 3px solid #0C244A;
+    border-right: 3px solid #0C244A;
+    content: '';
+}
+
+@media (max-width:789px){
+    .figure-flexbox{
+        flex-direction: column;
+    }
+    .figure-flexbox li{
+        margin: 0 auto 25px;
+    }
+}
+/* 当院の特徴 */
+.feature-wrap{
+    padding: 50px 0;
+}
+.heading-024 {
+    position: relative;
+    padding-top: 1.5em;
+    color: #0c244a;
+}
+
+.heading-024::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    color: #c7e9f5;
+    font-size: 3.5em;
+    line-height: 1;
+    content: attr(data-number);
+    pointer-events: none;
+}
+
+@media (max-width: 789px){
+    .flexbox-text{
+        margin: 0 auto;
+    }
+    .column{
+        flex-direction: column-reverse;
+    }
+}
+
+/* アクセス */
+.wrap-access{
+    background-color: #FFDBD7;
+    padding: 50px 0;
+}
+.access-content{
+    flex: 1;
+}
+.access-content:last-child{
+    width: 250px;
+    margin-left: 50px;
+}
+.sub-logo {
+    display: flex;
+    align-items: center;
+}
+.access-content p{
+    padding: 10px 0px 0px;
+    margin: 5px 0px;
+}
+.shinsatu-2{
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+}
+.access-content ul li{
+    margin: 5px 0px;
+}
+.gmap-wrap{
+    position : relative;
+    height : 0;
+    padding-bottom : 56.25%;
+    overflow : hidden;
+}
+.gmap-wrap iframe,
+.gmap-wrap object,
+.gmap-wrap embed{
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+}
+@media (max-width:789px){
+    .gmap-wrap{
+        padding-bottom : 100%;
+        justify-content: center;
+        width: 150%;
+        height: 150%;
+    }
+    .access-content:last-child{
+        margin-left: 8px;
+    }
+    .access-content:last-child{
+        width: 236px;
+    }
+} 
+
+/* フッター */
+footer{
+    padding: 50px 0 10px;
+    background: #FCEFE2;
+}
+footer ul li{
+    border-right: 1px solid #0C244A;
+    padding: 0px 32px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+footer ul li:last-child{
+    border-right: none;
+}
+footer p{
+    text-align: center;
+}
+@media (max-width: 789px){
+    footer ul li{
+        border: none;
+        text-align: center;
+    }
+}
+.cmg{
+    font-size: 4em;
+    margin: 65px;
+}

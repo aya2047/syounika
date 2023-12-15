@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>すくすくこどもクリニック</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="images/小児科ロゴ.svg" width="400px" height="90px" alt="すくすくこどもクリニックのロゴ">
+                </a>
+                <div class="contact">
+                    <div>
+                        <h4>
+                            <img src="images/受話器のアイコン (1).png" alt="電話のアイコン" width="30px" height="30px">
+                            <span>0000-00-0000</span>
+                        </h4>
+                        <p>〒000-0000 ○○県○○市○○町00-000</p>
+                    </div>
+                    <input id="checkbox2" type="checkbox" class="menu-btn">
+                    <label class="toggle toggle2" for="checkbox2">
+                        <div id="bar4" class="bars"></div>
+                        <div id="bar5" class="bars"></div>
+                        <div id="bar6" class="bars"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav">
+            <ul class="navbar flexbox">
+                <li><a href="#concept" class="concept-menu">コンセプト</a></li>
+                <li><a href="cmg.html" class="doctor-menu">医師紹介</a></li>
+                <li><a href="cmg.html" class="shinatsu-menu">診察案内</a></li>
+                <li><a href="#news" class="news-menu">お知らせ</a></li>
+                <li><a href="cmg.html" class="qanda-menu">よくある質問</a></li>
+                <li><a href="cmg.html" class="annai-menu">院内・設備案内</a></li>
+                <li><a href="cmg.html" class="access-menu">アクセス</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container keyvisual">
+        <ul id="topMainVisual">
+            <li><img src="images/oyako.jpg" alt="親子写真" width="1000px" height="660px"></li>
+            <li><img src="images/shinsatu.jpg" alt="診察中の写真" width="1000px" height="660px"></li>
+            <li><img src="images/待合.jpg" alt="待合室の写真" width="1000px" height="660px"></li>
+        </ul>
+        <div class="shinsatu-1">
+            <img src="images/診察時間.png" width="600px" height="200px" alt="診察時間">
+            <ul class="shinsatu-1-ul">
+                <li>※休診日は水曜日・日曜日・祝日です</li>
+                <li>※診療時間は変更になる場合があります</li>
+                <li>※予防接種・乳幼児健診
+                    <ul class="shinsatu-1-ul-2">
+                        <li>11:00～12:00</li>
+                        <li>14:00～15:00(予約制)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section>
+        <main>
+            <div class="wrapper-news" id="news">
+                <div class="container">
+                    <h2 class="news">お知らせ
+                        <span class="sub-menu">NEWS</span>
+                    </h2>
+                    <button class="button-048 button-048-1" onclick="location.href='cmg.html'">もっとみる</button>
+
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>20XX.10.5</dt>
+                                        <dd>臨時休業のお知らせ</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <dl>
+                                        <dt>20XX.9.29</dt>
+                                        <dd>インフルエンザの予防接種開始のお知らせ</dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="button-048 button-048-2" onclick="location.href='cmg.html'">もっとみる</button>
+                </div>
+            </div>
+
+
+            <div class="container" id="concept">
+                <div class="consept-wrap">
+                    <h2>コンセプト
+                        <span class="sub-menu">CONCEPT</span>
+                    </h2>
+                    <div class="flexbox">
+                        <div class="flexbox-image">
+                            <img src="images/コンセプト.svg" alt="コンセプト写真">
+                        </div>
+                        <p class="flexbox-text">地域のためになにか力になりたいと思い、子どもたちの健康と未来を守っています。<br>
+                            身体の健康だけでなく、心も健康に過ごしてもらいたいという願いのもと、カウンセラーによるカウンセリングも行っております。<br>
+                            ささいなことからお気軽にご相談ください。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="medical-wrap">
+                    <h2>診療案内
+                        <span class="sub-menu">MEDICAL</span>
+                    </h2>
+
+                    <ul class="figure-flexbox">
+                        <li class="ippanshinryo">
+                            <figure class="flexbox-shinryo">
+                                <img src="images/一般診療.jpg" alt="マスクをしている子どもの写真">
+                                <figcaption>
+                                    <h3>一般診療</h3>
+                                    <p class="shinryo-content">小児科専門医として、大人になるまでの病気全般を診察します</p>
+                                    <button class="button-049" onclick="location.href='index.html'">くわしく</button>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="yoboutyusya">
+                            <figure class="flexbox-shinryo">
+                                <img src="images/予防注射.jpg" alt="注射をしている赤ちゃんの写真">
+                                <figcaption>
+                                    <h3>予防接種</h3>
+                                    <p class="shinryo-content">定期接種、任意接種を行えます。詳しくは、下のボタンよりご案内します。</p>
+                                    <button class="button-049" onclick="location.href='index.html'">くわしく</button>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="kenshin">
+                            <figure class="flexbox-shinryo">
+                                <img src="images/乳幼児健診.jpg" alt="健診を受けている赤ちゃんの写真">
+                                <figcaption>
+                                    <h3>乳幼児健診</h3>
+                                    <p class="shinryo-content">お子さまの発育状況をチェックします。病気の早期発見にもつながります。</p>
+                                    <button class="button-049" onclick="location.href='index.html'">くわしく</button>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="feature-wrap">
+                    <h2>当院の特徴
+                        <span class="sub-menu">FEATURE</span>
+                    </h2>
+                    
+
+                    <div class="flexbox">
+                        <div class="flexbox-text">
+                            <h3 class="heading-024" data-number="01">小児科専門医</h3>
+                                <p>小児科医として20年間培ってきた経験をいかしお子さまの心身の健康をサポートさせていただきます。
+                                    予防接種や乳幼児健診もしておりますので、希望させる方はご予約の上ご来院ください。
+                                </p>
+                        </div>
+                            <div class="flexbox-image">
+                                <img src="images/聴診.svg" alt="赤ちゃんを聴診器で診察している写真">
+                            </div>
+                    </div>
+                    <div class="flexbox column">
+                        <div class="flexbox-image">
+                            <img src="images/相談.svg" alt="女医に相談している写真">
+                        </div>
+                        <div class="flexbox-text">
+                            <h3 class="heading-024" data-number="02">相談しやすい</h3>
+                                <p>当院は相談ルームを備えつけておりますので、安心してご相談ください。
+                                    また、火曜日、金曜日、土曜日はカウンセラーがおります。カウンセリングをご希望の方はwebまたはお電話にてご予約ください。
+                                    ささいなことからご相談に乗ります。お気軽にお声がけください。
+                                </p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="wrap-access">
+            <div class="container">
+                <h2>アクセス
+                    <span class="sub-menu">ACCESS</span>
+                </h2>
+                 <div class="flexbox">
+                    <div class="access-content">
+                        <div class="sub-logo">
+                            <a href="index.html">
+                                <img src="images/小児科ロゴ.svg" width="400px" height="90px" alt="すくすくこどもクリニックのロゴ">
+                            </a>
+                        </div>
+                        <p>〒000-0000<br>
+                         ○○県○○市○○町00-000</p>
+                        <h4>
+                            <img src="images/受話器のアイコン (1).png" alt="電話のアイコン" width="30px" height="30px">
+                            <span>0000-00-0000</span>
+                        </h4>
+                        <ul>
+                            <li>※休診日は水曜日・日曜日・祝日です</li>
+                            <li>※診療時間は変更になる場合があります</li>
+                            <li>※予防接種・乳幼児健診
+                                <ul class="shinsatu-content">
+                                    <li>11:00～12:00</li>
+                                    <li>14:00～15:00(予約制)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="access-content">
+                        <div class="gmap-wrap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18104.516575809357!2d132.40118471308443!3d34.34444270499858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1698383775498!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <p>駐車場：11台 有り</p>
+                        <p>駐輪場：有り</p>
+                        <p>バス停○○から徒歩5分</p>
+                    </div>
+                </div>
+                <div class="shinsatu-2">
+                    <img src="images/診察時間.png" width="600px" height="200px" alt="診察時間">
+                </div>
+            </div>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <ul class="flexbox">
+                    <li><a href="#concept" class="concept-menu">コンセプト</a></li>
+                    <li><a href="cmg.html" class="doctor-menu">医師紹介</a></li>
+                    <li><a href="cmg.html" class="shinatsu-menu">診察案内</a></li>
+                    <li><a href="#news" class="news-menu">お知らせ</a></li>
+                    <li><a href="cmg.html" class="qanda-menu">よくある質問</a></li>
+                    <li><a href="cmg.html" class="annai-menu">院内・設備案内</a></li>
+                    <li><a href="cmg.html" class="access-menu">アクセス</a></li>
+                </ul>
+            </div>
+            <p>&copy; 2023 すくすくこどもクリニック</p>
+        </div>
+    </footer>
+    <script src="script/slide.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
